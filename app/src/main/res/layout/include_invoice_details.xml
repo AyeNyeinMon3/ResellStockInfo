@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_constraint_general_expense">
+
+
+    <TextView
+        android:id="@+id/tv_lbl_invoice_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Invoice details"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_lbl_return_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="ပြန်ဝယ်စျေး"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_return_price"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_invoice_details" />
+
+    <TextView
+        android:id="@+id/tv_return_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="45,000"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_return_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_lbl_return_price"
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_return_price" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gold_and_gem_weight_KPY"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ရွှေ+ကျောက်ချိန်(With KPY)"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_lbl_return_price"
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_return_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_return_price" />
+
+    <TextView
+        android:id="@+id/tv_gold_and_gem_weight_K"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gold_and_gem_weight_KPY"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gold_and_gem_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gold_and_gem_weight_K"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="K"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_gold_and_gem_weight_P"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gold_and_gem_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_gold_and_gem_weight_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gold_and_gem_weight_P"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gold_and_gem_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gold_and_gem_weight_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="P"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_gold_and_gem_weight_Y"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gold_and_gem_weight_P" />
+
+    <TextView
+        android:id="@+id/tv_gold_and_gem_weight_Y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gold_and_gem_weight_Y"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gold_and_gem_weight_P" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gold_and_gem_weight_Y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Y"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gold_and_gem_weight_Y" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gem_weight_KPY"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ကျောက်ချိန်"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_gold_and_gem_weight_KPY"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_gold_and_gem_weight_KPY" />
+
+    <TextView
+        android:id="@+id/tv_gem_weight_K"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gem_weight_KPY"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gem_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gem_weight_K"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="K"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_gem_weight_P"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gem_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_gem_weight_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gem_weight_P"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gem_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gem_weight_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="P"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_gem_weight_Y"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gem_weight_P" />
+
+    <TextView
+        android:id="@+id/tv_gem_weight_Y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gem_weight_Y"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gem_weight_P" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gem_weight_Y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Y"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gem_weight_Y" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gee_weight_KPY"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ဂျီးချိန်"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_gem_weight_KPY"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_gem_weight_KPY" />
+
+    <TextView
+        android:id="@+id/tv_gee_weight_K"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gee_weight_KPY"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gee_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gee_weight_K"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="K"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_gee_weight_P"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gee_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_gee_weight_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gee_weight_P"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gee_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gee_weight_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="P"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_gee_weight_Y"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gee_weight_P" />
+
+    <TextView
+        android:id="@+id/tv_gee_weight_Y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gee_weight_Y"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gee_weight_P" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gee_weight_Y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Y"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gee_weight_Y" />
+
+    <TextView
+        android:id="@+id/tv_lbl_added_reduce_KPY"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ထည့်ပေးအရော့"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_gee_weight_KPY"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_gee_weight_KPY" />
+
+    <TextView
+        android:id="@+id/tv_added_reduce_K"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_added_reduce_KPY"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_added_reduce_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_added_reduce_K"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="K"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_added_reduce_P"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_added_reduce_K" />
+
+    <TextView
+        android:id="@+id/tv_added_reduce_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_added_reduce_P"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_added_reduce_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_added_reduce_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="P"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_added_reduce_Y"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_added_reduce_P" />
+
+    <TextView
+        android:id="@+id/tv_added_reduce_Y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_added_reduce_Y"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_added_reduce_P" />
+
+    <TextView
+        android:id="@+id/tv_lbl_added_reduce_Y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Y"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_added_reduce_Y" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gem_and_dia_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="ကျောက်ဖိုး/စိန်ဖိုး"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_gem_and_dia_price"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_added_reduce_KPY" />
+
+    <TextView
+        android:id="@+id/tv_gem_and_dia_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="5000"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gem_and_dia_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_lbl_gem_and_dia_price"
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_gem_and_dia_price" />
+
+    <TextView
+        android:id="@+id/tv_lbl_fee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="လက်ခ"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_fee"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_gem_and_dia_price" />
+
+    <TextView
+        android:id="@+id/tv_fee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="5,000"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_fee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_lbl_fee"
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_fee" />
+
+    <TextView
+        android:id="@+id/tv_lbl_PT_clip_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="PT‌အောက်ခံကလစ်ဖိုး"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_PT_clip_price"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_fee" />
+
+    <TextView
+        android:id="@+id/tv_PT_clip_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="5,000"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_PT_clip_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_lbl_PT_clip_price"
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_PT_clip_price" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/lineColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_goldQ" />
+
+    <TextView
+        android:id="@+id/tv_lbl_goldQ"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="ရွှေရည် (Carat)"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_PT_clip_price"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_PT_clip_price" />
+
+    <TextView
+        android:id="@+id/tv_goldQ"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="22"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_goldQ"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_mm" />
+
+    <TextView
+        android:id="@+id/tv_lbl_mm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="mm"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_goldQ"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gold_weight_KPY"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ရွှေချိန်"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_goldQ"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/tv_gold_weight_K"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gold_weight_KPY"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gold_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gold_weight_K"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="K"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_gold_weight_P"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gold_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_gold_weight_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gold_weight_P"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gold_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gold_weight_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="P"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_gold_weight_Y"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gold_weight_P" />
+
+    <TextView
+        android:id="@+id/tv_gold_weight_Y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gold_weight_Y"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gold_weight_P" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gold_weight_Y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Y"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gold_weight_Y" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/lineColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_gold_weight_KPY" />
+
+    <TextView
+        android:id="@+id/tv_lbl_pay_form_shop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="ဆိုင်မှဝယ်ပေးငွေ"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_pay_form_shop"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/tv_pay_form_shop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_pay_form_shop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_lbl_pay_form_shop"
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_pay_form_shop" />
+
+
+    <TextView
+        android:id="@+id/tv_lbl_purchase_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="ဝယ်စျေး"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_purchase_price"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_pay_form_shop" />
+
+    <TextView
+        android:id="@+id/tv_purchase_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="5,000"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_purchase_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_lbl_purchase_price" />
+
+    <TextView
+        android:id="@+id/tv_lbl_open_voucher_pay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="ဘောင်ချာဖွင့်ဝယ်ပေးငွေ"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_open_voucher_pay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_purchase_price" />
+
+    <TextView
+        android:id="@+id/tv_open_voucher_pay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="5,000"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_open_voucher_pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_lbl_open_voucher_pay" />
+
+
+    <TextView
+        android:id="@+id/tv_lbl_mortgage_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="သတ်မှတ်အပေါင်စျေး"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mortgage_price"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_open_voucher_pay" />
+
+    <TextView
+        android:id="@+id/tv_mortgage_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="5,000"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_mortgage_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_lbl_mortgage_price" />
+
+    <TextView
+        android:id="@+id/tv_lbl_pawn_money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="အပေါင်ရမည့်ငွေ"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_pawn_money"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_mortgage_price" />
+
+    <TextView
+        android:id="@+id/tv_pawn_money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="5,000"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_pawn_money"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_lbl_pawn_money" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

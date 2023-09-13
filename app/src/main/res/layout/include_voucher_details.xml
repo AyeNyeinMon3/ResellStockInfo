@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_constraint_general_expense">
+
+    <TextView
+        android:id="@+id/tv_lbl_invoice_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Voucher details"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_lbl_voucher_open_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="ဘောင်ချာဖွင့်ဝယ်စျေး"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_voucher_open_price"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_invoice_details" />
+
+    <TextView
+        android:id="@+id/tv_voucher_open_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="45,000"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_voucher_open_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_lbl_voucher_open_price"
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_voucher_open_price" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gold_weight_KPY"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ရွှေချိန်"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_lbl_voucher_open_price"
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_voucher_open_price" />
+
+    <TextView
+        android:id="@+id/tv_gold_weight_K"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gold_weight_KPY"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gold_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gold_weight_K"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="K"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_gold_weight_P"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gold_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_gold_weight_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gold_weight_P"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gold_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gold_weight_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="P"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_gold_weight_Y"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gold_weight_P" />
+
+    <TextView
+        android:id="@+id/tv_gold_weight_Y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_gold_weight_Y"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gold_weight_P" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gold_weight_Y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Y"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gold_weight_Y" />
+
+
+
+    <TextView
+        android:id="@+id/tv_lbl_price_from_voucher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="အဝယ်ဘောင်ချာမှစျေး"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_price_from_voucher"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_gold_weight_KPY" />
+
+    <TextView
+        android:id="@+id/tv_price_from_voucher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="45,000"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_price_from_voucher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_lbl_price_from_voucher"
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_price_from_voucher" />
+
+    <TextView
+        android:id="@+id/tv_lbl_purchase_gold_weight_KPY"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="အဝယ်သို့ထည့်ပေးရွှေချိန်"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_lbl_price_from_voucher"
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_price_from_voucher"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_price_from_voucher" />
+
+    <TextView
+        android:id="@+id/tv_purchase_gold_weight_K"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_purchase_gold_weight_KPY"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_purchase_gold_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_purchase_gold_weight_K"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="K"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_purchase_gold_weight_P"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_purchase_gold_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_purchase_gold_weight_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_purchase_gold_weight_P"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_purchase_gold_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_purchase_gold_weight_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="P"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_purchase_gold_weight_Y"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_purchase_gold_weight_P" />
+
+    <TextView
+        android:id="@+id/tv_purchase_gold_weight_Y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lbl_purchase_gold_weight_Y"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_purchase_gold_weight_P" />
+
+    <TextView
+        android:id="@+id/tv_lbl_purchase_gold_weight_Y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Y"
+        android:textAlignment="textEnd"
+        android:textColor="#7B8794"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_purchase_gold_weight_Y" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

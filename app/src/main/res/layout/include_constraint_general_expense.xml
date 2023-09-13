@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_constraint_general_expense"
+    app:layoutDescription="@xml/include_constraint_general_expense_scene">
+
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/lineColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_added_reduce_K" />
+
+    <TextView
+        android:id="@+id/tv_lbl_general_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="အထွေထွေစားရိတ်"
+        android:textColor="@color/textColor"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch_general_expense"
+        android:layout_width="52dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_general_expense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_general_expense"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/tv_lbl_added_reduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ထည့်ပေးအရော့"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_general_expense"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_general_expense" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_added_reduce_K"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayout_added_recuce_P"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_added_reduce"
+        app:suffixText="K"
+        app:suffixTextColor="@color/hintTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_added_reduce_K"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:textColor="@color/inputTextColor"
+            android:textColorHint="@color/hintTextColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_added_recuce_P"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayout_added_recuce_Y"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout_added_reduce_K"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout_added_reduce_K"
+        app:suffixText="P"
+        app:suffixTextColor="@color/hintTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_added_reduce_P"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:textColor="@color/inputTextColor"
+            android:textColorHint="@color/hintTextColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_added_recuce_Y"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout_added_recuce_P"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout_added_recuce_P"
+        app:suffixText="Y"
+        app:suffixTextColor="@color/hintTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_added_reduce_Y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:textColor="@color/inputTextColor"
+            android:textColorHint="@color/hintTextColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_lbl_gem_and_dia_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="ကျောက်ဖိုး/စိန်ဖိုး"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_edit_gem_and_dia_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@android:color/transparent"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="Edit"
+        android:textAlignment="textEnd"
+        android:textColor="@color/primaryColor"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_edit"
+        app:iconGravity="textStart"
+        app:iconPadding="-24dp"
+        app:iconSize="24dp"
+        app:iconTint="@color/primaryColor"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gem_and_dia_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_gem_and_dia_price" />
+
+    <TextView
+        android:id="@+id/tv_gem_and_dia_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="150,000 MMK"
+        android:textColor="@color/inputTextColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_gem_and_dia_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_gem_and_dia_price" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="#F1F6F0"
+        android:text="၁၀% လျှော့ပြီး"
+        android:textColor="#507749"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gem_and_dia_price"
+        app:layout_constraintStart_toEndOf="@+id/tv_gem_and_dia_price"
+        app:layout_constraintTop_toTopOf="@+id/tv_gem_and_dia_price" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/lineColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gem_and_dia_price" />
+
+    <TextView
+        android:id="@+id/tv_lbl_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="လက်ခ"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_fee"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_fee"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_fee">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/inputTextColor"
+            android:textColorHint="@color/hintTextColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_lbl_PT_clip_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="PT အောက်ခံကလစ်ဖိုး"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_fee" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_PT_clip_price"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_fee"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_PT_clip_price">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_PT_clip_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/inputTextColor"
+            android:textColorHint="@color/hintTextColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

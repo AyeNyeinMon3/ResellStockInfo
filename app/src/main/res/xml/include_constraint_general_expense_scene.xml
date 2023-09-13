@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnClick motion:targetId="@+id/switch_general_expense" />
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/tv_lbl_added_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_general_expense"
+            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_general_expense"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/view5"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_added_reduce_K"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_added_reduce_K"
+            motion:layout_constraintEnd_toStartOf="@+id/textInputLayout_added_recuce_P"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_added_reduce"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_added_recuce_P"
+            motion:layout_constraintEnd_toStartOf="@+id/textInputLayout_added_recuce_Y"
+            motion:layout_constraintStart_toEndOf="@+id/textInputLayout_added_reduce_K"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/textInputLayout_added_reduce_K"
+            motion:layout_constraintHorizontal_bias="0.5"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_added_recuce_Y"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/textInputLayout_added_recuce_P"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/textInputLayout_added_recuce_P"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_lbl_gem_and_dia_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/view5"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_edit_gem_and_dia_price"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gem_and_dia_price"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_gem_and_dia_price"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_gem_and_dia_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_gem_and_dia_price"
+            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_gem_and_dia_price"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textView"
+            motion:layout_constraintStart_toEndOf="@+id/tv_gem_and_dia_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_gem_and_dia_price"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_gem_and_dia_price"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/view6"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_gem_and_dia_price"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_lbl_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/view6"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_lbl_general_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="24dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            motion:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Constraint
+            android:id="@+id/textInputLayout_fee"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_fee"
+            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_fee"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_lbl_PT_clip_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_fee"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_PT_clip_price"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_PT_clip_price"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_fee"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
+</MotionScene>
