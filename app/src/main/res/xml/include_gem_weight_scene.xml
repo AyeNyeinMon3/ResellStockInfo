@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnClick motion:targetId="@+id/btn_edit_gem_weight_KPY" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/view"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/view2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_add_from_server"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_add_gem_weight_KPY"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gem_weight_KPY"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_gem_weight_KPY"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_cancel_gem_weight_KPY"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gem_weight_KPY"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_gem_weight_KPY"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/rBtn_manually"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_gem_weight_KPY"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/rBtn_addFromServer"
+            motion:layout_constraintStart_toEndOf="@+id/rBtn_manually"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            motion:layout_constraintTop_toTopOf="@+id/rBtn_manually"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_gem_weight_K"
+            motion:layout_constraintEnd_toStartOf="@+id/textInputLayout_gem_weight_P"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            motion:layout_constraintTop_toBottomOf="@+id/rBtn_manually"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_gem_weight_P"
+            motion:layout_constraintEnd_toStartOf="@+id/textInputLayout_gem_weight_Y"
+            motion:layout_constraintStart_toEndOf="@+id/textInputLayout_gem_weight_K"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintTop_toBottomOf="@+id/rBtn_manually"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="32dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_gem_weight_Y"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/textInputLayout_gem_weight_P"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toBottomOf="@+id/rBtn_manually"
+            motion:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="32dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_server_gem_weight_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/rBtn_manually"
+            motion:layout_constraintStart_toStartOf="@+id/rBtn_manually"
+            android:layout_marginTop="32dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_server_gem_weight_P"
+            motion:layout_constraintStart_toEndOf="@+id/tv_server_gem_weight_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_server_gem_weight_K"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_server_gem_weight_Y"
+            motion:layout_constraintStart_toEndOf="@+id/tv_server_gem_weight_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_server_gem_weight_P"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_edit_server_gem_weight_KPY"
+            motion:layout_constraintStart_toEndOf="@+id/tv_server_gem_weight_Y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_server_gem_weight_Y"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_server_gem_weight_Y"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_add_from_server"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_server_gem_weight_K"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_add_gem_weight"
+            android:layout_width="124dp"
+            android:layout_height="48dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_gem_weight_K"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp"
+            android:visibility="gone" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/btn_edit_gem_weight_KPY"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gem_weight_KPY"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_gem_weight_KPY"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_add_gem_weight_KPY"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gem_weight_KPY"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_gem_weight_KPY"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_gem_weight_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_gem_weight_KPY"
+            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_gem_weight_KPY"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_gem_weight_P"
+            motion:layout_constraintStart_toEndOf="@+id/tv_gem_weight_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_gem_weight_K"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_gem_weight_Y"
+            motion:layout_constraintStart_toEndOf="@+id/tv_gem_weight_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_gem_weight_P"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_add_from_server"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_server_gem_weight_K"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_server_gem_weight_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/rBtn_manually"
+            motion:layout_constraintStart_toStartOf="@+id/rBtn_manually"
+            android:layout_marginTop="32dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_server_gem_weight_P"
+            motion:layout_constraintStart_toEndOf="@+id/tv_server_gem_weight_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_server_gem_weight_K"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_server_gem_weight_Y"
+            motion:layout_constraintStart_toEndOf="@+id/tv_server_gem_weight_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_server_gem_weight_P"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_edit_server_gem_weight_KPY"
+            motion:layout_constraintStart_toEndOf="@+id/tv_server_gem_weight_Y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_server_gem_weight_Y"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_server_gem_weight_Y"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/view2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toBottomOf="@id/btn_add_gem_weight"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp" />
+        <Constraint
+            android:id="@+id/view2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toBottomOf="@id/btn_add_gem_weight"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp" />
+    </ConstraintSet>
+    <ConstraintSet
+        android:id="@+id/addFromServer"
+        motion:deriveConstraintsFrom="@+id/end" >
+        <Constraint
+            android:id="@+id/textInputLayout_gem_weight_K"
+            motion:layout_constraintEnd_toStartOf="@+id/textInputLayout_gem_weight_P"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            motion:layout_constraintTop_toBottomOf="@+id/rBtn_manually"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_gem_weight_P"
+            motion:layout_constraintEnd_toStartOf="@+id/textInputLayout_gem_weight_Y"
+            motion:layout_constraintStart_toEndOf="@+id/textInputLayout_gem_weight_K"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintTop_toBottomOf="@+id/rBtn_manually"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="32dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_gem_weight_Y"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/textInputLayout_gem_weight_P"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toBottomOf="@+id/rBtn_manually"
+            motion:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="32dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_add_gem_weight"
+            android:layout_width="124dp"
+            android:layout_height="48dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_gem_weight_K"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_server_gem_weight_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            motion:layout_constraintTop_toBottomOf="@+id/rBtn_manually"
+            motion:layout_constraintStart_toStartOf="@+id/rBtn_manually"
+            android:layout_marginTop="32dp" />
+        <Constraint
+            android:id="@+id/tv_server_gem_weight_P"
+            motion:layout_constraintStart_toEndOf="@+id/tv_server_gem_weight_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_server_gem_weight_K" />
+        <Constraint
+            android:id="@+id/tv_server_gem_weight_Y"
+            motion:layout_constraintStart_toEndOf="@+id/tv_server_gem_weight_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_server_gem_weight_P" />
+        <Constraint
+            android:id="@+id/btn_edit_server_gem_weight_KPY"
+            motion:layout_constraintStart_toEndOf="@+id/tv_server_gem_weight_Y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_server_gem_weight_Y"
+            android:visibility="visible"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_server_gem_weight_Y" />
+        <Constraint
+            android:id="@+id/btn_add_from_server"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:visibility="visible"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_server_gem_weight_K"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp" />
+        <Constraint
+            android:id="@+id/view2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toBottomOf="@id/btn_add_from_server"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/end"
+        motion:constraintSetEnd="@+id/addFromServer" >
+        <OnClick motion:targetId="@+id/rBtn_addFromServer" />
+    </Transition>
+    <Transition
+        motion:constraintSetStart="@+id/end"
+        motion:constraintSetEnd="@+id/start" >
+        <OnClick motion:targetId="@+id/btn_cancel_gem_weight_KPY" />
+    </Transition>
+    <Transition
+        motion:constraintSetStart="@+id/addFromServer"
+        motion:constraintSetEnd="@+id/start" >
+        <OnClick motion:targetId="@+id/btn_cancel_gem_weight_KPY" />
+    </Transition>
+</MotionScene>
