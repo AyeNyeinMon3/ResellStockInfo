@@ -6,7 +6,7 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1000">
+        motion:duration="500">
        <KeyFrameSet>
        </KeyFrameSet>
         <OnClick motion:targetId="@+id/btn_edit_gem_weight_KPY" />
@@ -375,12 +375,14 @@
     </Transition>
     <Transition
         motion:constraintSetStart="@+id/end"
-        motion:constraintSetEnd="@+id/start" >
+        motion:constraintSetEnd="@+id/start"
+        motion:duration="500">
         <OnClick motion:targetId="@+id/btn_cancel_gem_weight_KPY" />
     </Transition>
     <Transition
         motion:constraintSetStart="@+id/addFromServer"
-        motion:constraintSetEnd="@+id/start" >
+        motion:constraintSetEnd="@+id/start"
+        motion:duration="500">
         <OnClick motion:targetId="@+id/btn_cancel_gem_weight_KPY" />
     </Transition>
 </MotionScene>

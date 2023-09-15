@@ -23,8 +23,7 @@
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="24dp"
-            android:visibility="gone"
-            android:alpha="0"/>
+            android:visibility="gone" />
         <Constraint
             android:id="@+id/view2"
             motion:layout_constraintEnd_toEndOf="parent"
@@ -35,30 +34,25 @@
             android:layout_marginStart="24dp"
             motion:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="24dp"
-            android:visibility="gone"
-            android:alpha="0"/>
+            android:visibility="gone" />
         <Constraint
-            android:id="@+id/btn_cancel_purchase_gold_weight"
+            android:id="@+id/btn_add_purchase_gold_weight"
+            android:layout_width="124dp"
+            android:layout_height="48dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_purchase_gold_weight_K"
+            motion:layout_constraintStart_toStartOf="@+id/textInputLayout_purchase_gold_weight_K"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_purchase_gold_weight_Y"
             motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_purchase_gold_weight"
-            android:layout_marginEnd="24dp"
-            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_purchase_gold_weight"
-            android:visibility="gone"
-            android:alpha="0"/>
-        <Constraint
-            android:id="@+id/textInputLayout_purchase_gold_weight_K"
-            motion:layout_constraintEnd_toStartOf="@+id/textInputLayout_purchase_gold_weight_P"
+            motion:layout_constraintStart_toEndOf="@+id/textInputLayout_purchase_gold_weight_P"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_purchase_gold_weight"
-            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             motion:layout_constraintHorizontal_bias="0.5"
-            motion:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="16dp"
-            android:visibility="gone"
-            android:alpha="0"/>
+            motion:layout_constraintTop_toTopOf="@+id/textInputLayout_purchase_gold_weight_P"
+            android:visibility="gone" />
         <Constraint
             android:id="@+id/textInputLayout_purchase_gold_weight_P"
             motion:layout_constraintEnd_toStartOf="@+id/textInputLayout_purchase_gold_weight_Y"
@@ -69,28 +63,27 @@
             android:layout_marginStart="16dp"
             motion:layout_constraintTop_toTopOf="@+id/textInputLayout_purchase_gold_weight_K"
             motion:layout_constraintHorizontal_bias="0.5"
-            android:visibility="gone"
-            android:alpha="0"/>
+            android:visibility="gone" />
         <Constraint
-            android:id="@+id/textInputLayout_purchase_gold_weight_Y"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintStart_toEndOf="@+id/textInputLayout_purchase_gold_weight_P"
+            android:id="@+id/textInputLayout_purchase_gold_weight_K"
+            motion:layout_constraintEnd_toStartOf="@+id/textInputLayout_purchase_gold_weight_P"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_purchase_gold_weight"
+            android:layout_marginStart="24dp"
             motion:layout_constraintHorizontal_bias="0.5"
-            motion:layout_constraintTop_toTopOf="@+id/textInputLayout_purchase_gold_weight_P"
-            android:visibility="gone"
-            android:alpha="0"/>
-        <Constraint
-            android:id="@+id/btn_add_purchase_gold_weight"
-            android:layout_width="124dp"
-            android:layout_height="48dp"
-            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_purchase_gold_weight_K"
-            motion:layout_constraintStart_toStartOf="@+id/textInputLayout_purchase_gold_weight_K"
+            motion:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="16dp"
-            android:visibility="gone"
-            android:alpha="0"/>
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_cancel_purchase_gold_weight"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_purchase_gold_weight"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_purchase_gold_weight"
+            android:visibility="gone" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
@@ -102,8 +95,7 @@
             motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_purchase_gold_weight"
             android:layout_marginEnd="24dp"
             motion:layout_constraintTop_toTopOf="@+id/tv_lbl_purchase_gold_weight"
-            android:visibility="gone"
-            android:alpha="0"/>
+            android:visibility="gone" />
         <Constraint
             android:id="@+id/tv_purchase_gold_weight"
             android:layout_width="wrap_content"
@@ -111,8 +103,7 @@
             motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_purchase_gold_weight"
             motion:layout_constraintStart_toStartOf="@+id/tv_lbl_purchase_gold_weight"
             android:layout_marginTop="16dp"
-            android:visibility="gone"
-            android:alpha="0"/>
+            android:visibility="gone" />
     </ConstraintSet>
     <Transition
         motion:constraintSetStart="@+id/end"

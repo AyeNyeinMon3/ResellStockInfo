@@ -7,7 +7,7 @@
     app:layoutDescription="@xml/include_voucher_open_pay_scene">
 
     <TextView
-        android:id="@+id/tv_lbl_voucher_open_price"
+        android:id="@+id/tv_lbl_voucher_open_pay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_edit_voucher_open_price"
+        android:id="@+id/btn_edit_voucher_open_pay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
@@ -39,12 +39,12 @@
         app:iconPadding="-24dp"
         app:iconSize="24dp"
         app:iconTint="@color/primaryColor"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_voucher_open_price"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_voucher_open_pay"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_lbl_voucher_open_price" />
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_voucher_open_pay" />
 
     <TextView
-        android:id="@+id/tv_voucher_open_price"
+        android:id="@+id/tv_voucher_open_pay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -52,12 +52,12 @@
         android:textColor="@color/inputTextColor"
         android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_price"
-        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_voucher_open_price" />
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_pay"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_voucher_open_pay" />
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_cancel_voucher_open_price"
+        android:id="@+id/btn_cancel_voucher_open_pay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
@@ -71,12 +71,12 @@
         android:textAlignment="textEnd"
         android:textColor="@color/primaryColor"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_voucher_open_price"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_voucher_open_pay"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_lbl_voucher_open_price" />
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_voucher_open_pay" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout_voucher_open_price"
+        android:id="@+id/textInputLayout_voucher_open_pay"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
@@ -84,11 +84,11 @@
         app:hintEnabled="false"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         app:layout_constraintEnd_toStartOf="@+id/textInputLayout_percentage_dis_price"
-        app:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_price"
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_pay"
         app:layout_constraintTop_toBottomOf="@+id/check">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edt_voucher_open_price"
+            android:id="@+id/edt_voucher_open_pay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -98,7 +98,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_save_voucher_open_price"
+        android:id="@+id/btn_save_voucher_open_pay"
         android:layout_width="124dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
@@ -108,7 +108,7 @@
         android:insetBottom="0dp"
         android:text="Save"
         app:cornerRadius="10dp"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout_voucher_open_price"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_voucher_open_pay"
         app:layout_constraintTop_toBottomOf="@+id/tv_lbl_dis" />
 
     <View
@@ -133,7 +133,7 @@
         android:background="@color/lineColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_save_voucher_open_price" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_save_voucher_open_pay" />
 
     <CheckBox
         android:id="@+id/check"
@@ -144,8 +144,8 @@
         android:textColor="@color/secondaryTextColor"
         android:textSize="13sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_price"
-        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_voucher_open_price" />
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_pay"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_voucher_open_pay" />
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -156,7 +156,7 @@
         app:hintEnabled="false"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textInputLayout_voucher_open_price">
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout_voucher_open_pay">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_percentage_dis_price"
@@ -182,8 +182,8 @@
         android:text="Calculate"
         android:textColor="@color/primaryColor"
         app:cornerRadius="10dp"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout_voucher_open_price"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_voucher_open_price" />
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_voucher_open_pay"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_voucher_open_pay" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout_calculate_percentage_dis_price"

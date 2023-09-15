@@ -9,31 +9,11 @@
         motion:duration="500">
        <KeyFrameSet>
        </KeyFrameSet>
-        <OnClick motion:targetId="@+id/btn_edit_voucher_open_price" />
+        <OnClick motion:targetId="@+id/btn_edit_voucher_open_pay" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
-        <Constraint
-            android:id="@+id/btn_cancel_voucher_open_price"
-            motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_voucher_open_price"
-            android:layout_marginEnd="24dp"
-            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_voucher_open_price"
-            android:visibility="gone"
-            android:alpha="0"/>
-        <Constraint
-            android:id="@+id/textInputLayout_voucher_open_price"
-            motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="24dp"
-            motion:layout_constraintTop_toBottomOf="@+id/radioButton"
-            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_price"
-            android:layout_marginTop="16dp"
-            android:visibility="gone"
-            android:alpha="0"/>
+
         <Constraint
             android:id="@+id/view"
             motion:layout_constraintEnd_toEndOf="parent"
@@ -44,38 +24,53 @@
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="24dp"
-            android:visibility="gone"
-            android:alpha="0"/>
+            android:visibility="gone" />
         <Constraint
             android:id="@+id/view2"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_marginEnd="24dp"
-            motion:layout_constraintTop_toBottomOf="@+id/btn_save_voucher_open_price"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_save_voucher_open_pay"
             android:layout_marginStart="24dp"
             motion:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="24dp"
-            android:visibility="gone"
-            android:alpha="0"/>
+            android:visibility="gone" />
         <Constraint
-            android:id="@+id/check"
+            android:id="@+id/btn_cancel_voucher_open_pay"
+            motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_voucher_open_price"
-            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_price"
-            android:layout_marginTop="16dp"
-            android:visibility="gone"
-            android:alpha="0"/>
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_voucher_open_pay"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_voucher_open_pay"
+            android:visibility="gone" />
         <Constraint
-            android:id="@+id/btn_save_voucher_open_price"
+            android:id="@+id/textInputLayout_voucher_open_pay"
+            motion:layout_constraintEnd_toStartOf="@+id/textInputLayout_percentage_dis_price"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintTop_toBottomOf="@+id/check"
+            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_pay"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_save_voucher_open_pay"
             android:layout_width="124dp"
             android:layout_height="48dp"
-            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_voucher_open_price"
-            motion:layout_constraintStart_toStartOf="@+id/textInputLayout_voucher_open_price"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_dis"
+            motion:layout_constraintStart_toStartOf="@+id/textInputLayout_voucher_open_pay"
             android:layout_marginTop="16dp"
-            android:visibility="gone"
-            android:alpha="0"/>
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_percentage_dis_price"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="118dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toTopOf="@+id/textInputLayout_voucher_open_pay"
+            android:visibility="gone" />
         <Constraint
             android:id="@+id/textInputLayout_calculate_percentage_dis_price"
             motion:layout_constraintEnd_toEndOf="parent"
@@ -85,26 +80,7 @@
             motion:layout_constraintTop_toBottomOf="@+id/btn_calculate"
             motion:layout_constraintStart_toStartOf="@+id/btn_calculate"
             android:layout_marginTop="16dp"
-            android:visibility="gone"
-            android:alpha="0"/>
-        <Constraint
-            android:id="@+id/textInputLayout_percentage_dis_price"
-            motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="118dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="24dp"
-            motion:layout_constraintTop_toTopOf="@+id/textInputLayout_voucher_open_price"
-            android:visibility="gone"
-            android:alpha="0"/>
-        <Constraint
-            android:id="@+id/btn_calculate"
-            android:layout_width="124dp"
-            android:layout_height="48dp"
-            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_voucher_open_price"
-            motion:layout_constraintStart_toStartOf="@+id/textInputLayout_voucher_open_price"
-            android:layout_marginTop="8dp"
-            android:visibility="gone"
-            android:alpha="0"/>
+            android:visibility="gone" />
         <Constraint
             android:id="@+id/tv_lbl_dis"
             android:layout_width="wrap_content"
@@ -112,79 +88,7 @@
             motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_calculate_percentage_dis_price"
             motion:layout_constraintStart_toStartOf="@+id/textInputLayout_calculate_percentage_dis_price"
             android:layout_marginTop="8dp"
-            android:visibility="gone"
-            android:alpha="0"/>
-        <Constraint
-            android:id="@+id/tv_lbl_learn_more"
-            motion:layout_constraintStart_toEndOf="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            motion:layout_constraintTop_toTopOf="@+id/textView2"
-            android:visibility="gone"
-            android:alpha="0"/>
-    </ConstraintSet>
-
-    <ConstraintSet android:id="@+id/end">
-
-
-        <Constraint
-            android:id="@+id/btn_edit_voucher_open_price"
-            motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_voucher_open_price"
-            android:layout_marginEnd="24dp"
-            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_voucher_open_price"
-            android:visibility="gone"
-            android:alpha="0"/>
-        <Constraint
-            android:id="@+id/tv_voucher_open_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_voucher_open_price"
-            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_price"
-            android:layout_marginTop="16dp"
-            android:visibility="gone"
-            android:alpha="0"/>
-        <Constraint
-            android:id="@+id/textInputLayout_percentage_dis_price"
-            motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="118dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="24dp"
-            motion:layout_constraintTop_toTopOf="@+id/textInputLayout_voucher_open_price"
-            android:visibility="gone"
-            android:alpha="0"/>
-        <Constraint
-            android:id="@+id/btn_calculate"
-            android:layout_width="124dp"
-            android:layout_height="48dp"
-            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_voucher_open_price"
-            motion:layout_constraintStart_toStartOf="@+id/textInputLayout_voucher_open_price"
-            android:layout_marginTop="8dp"
-            android:visibility="gone"
-            android:alpha="0"/>
-        <Constraint
-            android:id="@+id/textInputLayout_calculate_percentage_dis_price"
-            motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="24dp"
-            motion:layout_constraintTop_toBottomOf="@+id/btn_calculate"
-            motion:layout_constraintStart_toStartOf="@+id/btn_calculate"
-            android:layout_marginTop="16dp"
-            android:visibility="gone"
-            android:alpha="0"/>
-        <Constraint
-            android:id="@+id/tv_lbl_dis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_calculate_percentage_dis_price"
-            motion:layout_constraintStart_toStartOf="@+id/textInputLayout_calculate_percentage_dis_price"
-            android:layout_marginTop="8dp"
-            android:visibility="gone"
-            android:alpha="0"/>
+            android:visibility="gone" />
         <Constraint
             android:id="@+id/tv_lbl_learn_more"
             motion:layout_constraintStart_toEndOf="@+id/tv_lbl_dis"
@@ -192,44 +96,123 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             motion:layout_constraintTop_toTopOf="@+id/tv_lbl_dis"
-            android:visibility="gone"
-            android:alpha="0"/>
+            android:visibility="gone" />
         <Constraint
-            android:layout_height="48dp"
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_voucher_open_pay"
+            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_pay"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="24dp"
-            android:layout_width="0dp"
-            motion:layout_constraintTop_toBottomOf="@+id/check"
-            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_price"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_calculate"
+            android:layout_width="124dp"
+            android:layout_height="48dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_voucher_open_pay"
+            motion:layout_constraintStart_toStartOf="@+id/textInputLayout_voucher_open_pay"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+
+        <Constraint
+            android:id="@+id/btn_edit_voucher_open_pay"
             motion:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/textInputLayout_voucher_open_price" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_voucher_open_pay"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_voucher_open_pay"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_voucher_open_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_voucher_open_pay"
+            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_pay"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_calculate"
+            android:layout_width="124dp"
+            android:layout_height="48dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_voucher_open_pay"
+            motion:layout_constraintStart_toStartOf="@+id/textInputLayout_voucher_open_pay"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_calculate_percentage_dis_price"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_calculate"
+            motion:layout_constraintStart_toStartOf="@+id/btn_calculate"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_percentage_dis_price"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="118dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toTopOf="@+id/textInputLayout_voucher_open_pay"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_voucher_open_pay"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toBottomOf="@+id/check"
+            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_pay"
+            android:layout_marginTop="16dp"
+             />
+        <Constraint
+            android:id="@+id/tv_lbl_learn_more"
+            motion:layout_constraintStart_toEndOf="@+id/tv_lbl_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_dis"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_lbl_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_calculate_percentage_dis_price"
+            motion:layout_constraintStart_toStartOf="@+id/textInputLayout_calculate_percentage_dis_price"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
     </ConstraintSet>
     <Transition
         motion:constraintSetStart="@+id/end"
         motion:constraintSetEnd="@+id/start"
         motion:duration="500">
-        <OnClick motion:targetId="@+id/btn_cancel_voucher_open_price" />
+        <OnClick motion:targetId="@+id/btn_cancel_voucher_open_pay" />
     </Transition>
     <ConstraintSet android:id="@+id/calculate" >
+
         <Constraint
-            android:id="@+id/btn_edit_voucher_open_price"
+            android:id="@+id/tv_voucher_open_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_voucher_open_pay"
+            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_pay"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_edit_voucher_open_pay"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_voucher_open_price"
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_voucher_open_pay"
             android:layout_marginEnd="24dp"
-            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_voucher_open_price"
-            android:visibility="gone"
-            android:alpha="0"/>
-        <Constraint
-            android:id="@+id/tv_voucher_open_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_voucher_open_price"
-            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_voucher_open_price"
-            android:layout_marginTop="16dp"
-            android:visibility="gone"
-            android:alpha="0"/>
+            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_voucher_open_pay"
+            android:visibility="gone" />
     </ConstraintSet>
     <Transition
         motion:constraintSetStart="@+id/end"
@@ -241,6 +224,6 @@
         motion:constraintSetStart="@+id/calculate"
         motion:constraintSetEnd="@+id/start"
         motion:duration="500">
-        <OnClick motion:targetId="@+id/btn_cancel_voucher_open_price" />
+        <OnClick motion:targetId="@+id/btn_cancel_voucher_open_pay" />
     </Transition>
 </MotionScene>

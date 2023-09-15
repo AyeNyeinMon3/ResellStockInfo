@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="500">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnClick motion:targetId="@+id/btn_edit_goldQ" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/view"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/view2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toBottomOf="@id/btn_add_goldQ"
+            android:layout_marginStart="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_add_goldQ"
+            android:layout_width="124dp"
+            android:layout_height="48dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_goldQ"
+            motion:layout_constraintStart_toStartOf="@+id/textInputLayout_goldQ"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/textInputLayout_goldQ"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_goldQ"
+            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_goldQ"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/btn_cancel_goldQ"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_goldQ"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_goldQ"
+            android:visibility="gone" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/btn_edit_goldQ"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/tv_lbl_goldQ"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_lbl_goldQ"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_goldQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_goldQ"
+            motion:layout_constraintStart_toStartOf="@+id/tv_lbl_goldQ"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/end"
+        motion:constraintSetEnd="@+id/start"
+        motion:duration="500">
+        <OnClick motion:targetId="@+id/btn_cancel_goldQ" />
+    </Transition>
+</MotionScene>
