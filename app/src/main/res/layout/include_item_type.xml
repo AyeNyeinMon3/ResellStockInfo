@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/include_item_type_scene">
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="အမျိုးအစား"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/rBtn_outsideItem"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_radio_button"
+        android:checked="true"
+        android:padding="14dp"
+        android:text="အပြင်ထည်"
+        app:layout_constraintStart_toStartOf="@+id/tv_type"
+        app:layout_constraintTop_toBottomOf="@+id/tv_type" />
+
+    <RadioButton
+        android:id="@+id/rBtn_insideItem"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/background_radio_button"
+        android:padding="14dp"
+        android:text="တံဆိပ်ပါအထည်"
+        app:layout_constraintStart_toEndOf="@+id/rBtn_outsideItem"
+        app:layout_constraintTop_toTopOf="@+id/rBtn_outsideItem" />
+
+    <TextView
+        android:id="@+id/tv_item_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="ပစ္စည်းအခြေအနေ"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rBtn_outsideItem" />
+
+    <RadioButton
+        android:id="@+id/rBtn_Damage"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_radio_button"
+        android:checked="true"
+        android:padding="14dp"
+        android:text="Damage"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_condition"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_condition" />
+
+    <RadioButton
+        android:id="@+id/rBtn_good"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/background_radio_button"
+        android:padding="14dp"
+        android:text="Good"
+        app:layout_constraintStart_toEndOf="@+id/rBtn_Damage"
+        app:layout_constraintTop_toTopOf="@+id/rBtn_Damage" />
+
+    <RadioButton
+        android:id="@+id/rBtn_notToGo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/background_radio_button"
+        android:padding="14dp"
+        android:text="Not to go"
+        app:layout_constraintStart_toEndOf="@+id/rBtn_good"
+        app:layout_constraintTop_toTopOf="@+id/rBtn_good" />
+
+    <TextView
+        android:id="@+id/tv_return_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="ပြန်ဝယ်စျေး"
+        android:textColor="@color/inputTextColor"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rBtn_Damage" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_x"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_btn_x"
+        android:checkable="false"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text="X"
+        app:layout_constraintStart_toStartOf="@+id/tv_return_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_return_price" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_y"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/background_btn_y"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text="Y"
+        app:layout_constraintStart_toEndOf="@+id/btn_x"
+        app:layout_constraintTop_toTopOf="@+id/btn_x" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_z"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/background_btn_z"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text="Z"
+        app:layout_constraintStart_toEndOf="@+id/btn_y"
+        app:layout_constraintTop_toTopOf="@+id/btn_y" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_return_price"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="24dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_x"
+        app:layout_constraintTop_toBottomOf="@+id/btn_x">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_return_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/inputTextColor"
+            android:textColorHint="@color/hintTextColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
