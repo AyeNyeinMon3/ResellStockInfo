@@ -5,6 +5,18 @@
     android:layout_height="match_parent"
     app:layoutDescription="@xml/include_gold_and_gem_weight_gm_scene">
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/lineColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_lbl_gold_and_gem_weight_gm"
         android:layout_width="wrap_content"
@@ -16,7 +28,7 @@
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/view" />
 
     <TextView
         android:id="@+id/tv_lbl_with_gm"
@@ -43,7 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_lbl_gold_and_gem_weight_gm" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_gold_and_gem_weight_gm"
+        android:id="@+id/btn_edt_gold_and_gem_weight_gm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
@@ -66,5 +78,70 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_lbl_gold_and_gem_weight_gm" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cancel_gold_and_gem_weight_gm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@android:color/transparent"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="Cancel"
+        android:textAlignment="textEnd"
+        android:textColor="@color/primaryColor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gold_and_gem_weight_gm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_gold_and_gem_weight_gm" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_goldAndGemWeightGm"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_gold_and_gem_weight_gm"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_gold_and_gem_weight_gm">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_gold_and_gem_weight_gm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/inputTextColor"
+            android:textColorHint="@color/hintTextColor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_gold_and_gem_weight_gm"
+        android:layout_width="124dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text="Add"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_goldAndGemWeightGm"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_goldAndGemWeightGm" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/lineColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_gold_and_gem_weight_gm"/>
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

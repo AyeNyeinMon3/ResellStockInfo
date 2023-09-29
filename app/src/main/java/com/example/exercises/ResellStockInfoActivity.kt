@@ -17,8 +17,8 @@ class ResellStockInfoActivity : AppCompatActivity() {
 
 
         val myList = listOf(
-            Pair(binding.includeAmountList.includeGoldAndGemWeightGm.btnGoldAndGemWeightGm,binding.includeAmountList.includeGoldAndGemWeightGm.root),
-            Pair(binding.includeAmountList.includeGoldAndGemWeightKpy.btnGoldAndGemWeightKPY,binding.includeAmountList.includeGoldAndGemWeightKpy.root),
+            Pair(binding.includeAmountList.includeGoldAndGemWeightGm.btnEdtGoldAndGemWeightGm,binding.includeAmountList.includeGoldAndGemWeightGm.root),
+            Pair(binding.includeAmountList.includeGoldAndGemWeightKpy.btnEditGoldAndGemWeightKPY,binding.includeAmountList.includeGoldAndGemWeightKpy.root),
             Pair(binding.includeAmountList.includeGemWeight.btnEditGemWeightKPY, binding.includeAmountList.includeGemWeight.root),
             Pair(binding.includeAmountList.includeGeeWeight.btnEditGeeWeightKPY, binding.includeAmountList.includeGeeWeight.root),
             Pair(binding.includeAmountList.includeItemType.rBtnGood, binding.includeAmountList.includeItemType.root),
@@ -60,7 +60,7 @@ class ResellStockInfoActivity : AppCompatActivity() {
 
 
                 myList.forEach { view ->
-                    if( myList.filter { it.first.isVisible.not() }.isNotEmpty() && view.first.id != binding.includeAmountList.includeGoldAndGemWeightGm.btnGoldAndGemWeightGm.id){
+                    if( myList.filter { it.first.isVisible.not() }.isNotEmpty() && view.first.id != binding.includeAmountList.includeGoldAndGemWeightGm.btnEdtGoldAndGemWeightGm.id){
                         view.first.isEnabled = false
                         view.second.alpha = 0.3F
 
@@ -110,7 +110,7 @@ class ResellStockInfoActivity : AppCompatActivity() {
 
 
                 myList.forEach { view ->
-                    if( myList.filter { it.first.isVisible.not() }.isNotEmpty() && view.first.id != binding.includeAmountList.includeGoldAndGemWeightKpy.btnGoldAndGemWeightKPY.id){
+                    if( myList.filter { it.first.isVisible.not() }.isNotEmpty() && view.first.id != binding.includeAmountList.includeGoldAndGemWeightKpy.btnEditGoldAndGemWeightKPY.id){
                         view.first.isEnabled = false
                         view.second.alpha = 0.3F
 
