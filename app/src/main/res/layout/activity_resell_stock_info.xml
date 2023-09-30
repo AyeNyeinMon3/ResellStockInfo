@@ -108,7 +108,7 @@
                     android:id="@+id/include_amount_list"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    layout="@layout/include_amount_list"
+                    layout="@layout/include_amount_list1"
                     android:layout_marginBottom="24dp"/>
 
             </LinearLayout>

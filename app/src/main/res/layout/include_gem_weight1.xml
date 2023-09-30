@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/lineColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_lbl_gem_weight_KPY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="ကျောက်ချိန်"
+        android:textColor="@color/textColor"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+    <TextView
+        android:id="@+id/tv_gem_weight_K"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0K"
+        android:textColor="@color/inputTextColor"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_lbl_gem_weight_KPY"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_gem_weight_KPY" />
+
+    <TextView
+        android:id="@+id/tv_gem_weight_P"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0P"
+        android:textColor="@color/inputTextColor"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_gem_weight_K"
+        app:layout_constraintTop_toTopOf="@+id/tv_gem_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_gem_weight_Y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0Y"
+        android:textColor="@color/inputTextColor"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_gem_weight_P"
+        app:layout_constraintTop_toTopOf="@+id/tv_gem_weight_P" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_edit_gem_weight_KPY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@android:color/transparent"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="Edit"
+        android:textAlignment="textEnd"
+        android:textColor="@color/primaryColor"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_edit"
+        app:iconGravity="textStart"
+        app:iconPadding="-24dp"
+        app:iconSize="24dp"
+        app:iconTint="@color/primaryColor"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gem_weight_KPY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_gem_weight_KPY" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_gem_weight_KPY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@android:color/transparent"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="Add"
+        android:textAlignment="textEnd"
+        android:textColor="@color/primaryColor"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_plus"
+        app:iconGravity="textStart"
+        app:iconPadding="-24dp"
+        app:iconSize="24dp"
+        app:iconTint="@color/primaryColor"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gem_weight_KPY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_gem_weight_KPY" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cancel_gem_weight_KPY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@android:color/transparent"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="Cancel"
+        android:textAlignment="textEnd"
+        android:textColor="@color/primaryColor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lbl_gem_weight_KPY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_lbl_gem_weight_KPY" />
+
+
+    <RadioButton
+        android:id="@+id/rBtn_manually"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_radio_button"
+        android:checked="true"
+        android:padding="14dp"
+        android:text="Manually"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbl_gem_weight_KPY" />
+
+    <RadioButton
+        android:id="@+id/rBtn_addFromServer"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/background_radio_button"
+        android:checked="false"
+        android:padding="14dp"
+        android:text="Add From Server"
+        app:layout_constraintStart_toEndOf="@+id/rBtn_manually"
+        app:layout_constraintTop_toTopOf="@+id/rBtn_manually" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_gem_weight_K"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        app:hintEnabled="false"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayout_gem_weight_P"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rBtn_manually"
+        app:suffixText="K"
+        app:suffixTextColor="@color/hintTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_gem_weight_K"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:textColor="@color/inputTextColor"
+            android:textColorHint="@color/hintTextColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_gem_weight_P"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:hintEnabled="false"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayout_gem_weight_Y"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout_gem_weight_K"
+        app:layout_constraintTop_toBottomOf="@+id/rBtn_manually"
+        app:suffixText="P"
+        app:suffixTextColor="@color/hintTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_gem_weight_P"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:textColor="@color/inputTextColor"
+            android:textColorHint="@color/hintTextColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_gem_weight_Y"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        app:hintEnabled="false"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout_gem_weight_P"
+        app:layout_constraintTop_toBottomOf="@+id/rBtn_manually"
+        app:suffixText="Y"
+        app:suffixTextColor="@color/hintTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_gem_weight_Y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:textColor="@color/inputTextColor"
+            android:textColorHint="@color/hintTextColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_gem_weight"
+        android:layout_width="124dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text="Add"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_gem_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_server_gem_weight_K"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="0K"
+        android:textColor="@color/inputTextColor"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/rBtn_manually"
+        app:layout_constraintTop_toBottomOf="@+id/rBtn_manually" />
+
+    <TextView
+        android:id="@+id/tv_server_gem_weight_P"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0P"
+        android:textColor="@color/inputTextColor"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_server_gem_weight_K"
+        app:layout_constraintTop_toTopOf="@+id/tv_server_gem_weight_K" />
+
+    <TextView
+        android:id="@+id/tv_server_gem_weight_Y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0Y"
+        android:textColor="@color/inputTextColor"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_server_gem_weight_P"
+        app:layout_constraintTop_toTopOf="@+id/tv_server_gem_weight_P" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_edit_server_gem_weight_KPY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@android:color/transparent"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="Edit"
+        android:textAlignment="textEnd"
+        android:textColor="@color/primaryColor"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_edit"
+        app:iconGravity="textStart"
+        app:iconPadding="-24dp"
+        app:iconSize="24dp"
+        app:iconTint="@color/primaryColor"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_server_gem_weight_Y"
+        app:layout_constraintStart_toEndOf="@+id/tv_server_gem_weight_Y"
+        app:layout_constraintTop_toTopOf="@+id/tv_server_gem_weight_Y" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_from_server"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text="Add from server"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_plus"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        app:iconSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_server_gem_weight_K" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/lineColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_gem_weight" />
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/lineColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_from_server" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

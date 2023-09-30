@@ -97,13 +97,30 @@
             motion:layout_constraintTop_toTopOf="@+id/tv_lbl_purchase_gold_weight"
             android:visibility="gone" />
         <Constraint
-            android:id="@+id/tv_purchase_gold_weight"
+            android:id="@+id/tv_purchase_gold_weight_K"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintTop_toBottomOf="@+id/tv_lbl_purchase_gold_weight"
             motion:layout_constraintStart_toStartOf="@+id/tv_lbl_purchase_gold_weight"
             android:layout_marginTop="16dp"
             android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_purchase_gold_weight_P"
+            motion:layout_constraintStart_toEndOf="@+id/tv_purchase_gold_weight_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_purchase_gold_weight_K"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/tv_purchase_gold_weight_Y"
+            motion:layout_constraintStart_toEndOf="@+id/tv_purchase_gold_weight_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/tv_purchase_gold_weight_P"
+            android:visibility="gone" />
+
     </ConstraintSet>
     <Transition
         motion:constraintSetStart="@+id/end"
