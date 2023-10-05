@@ -4,8 +4,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="textColor">#1F2933</color>
     <color name="secondaryTextColor">#3E4C59</color>
+    <color name="thirdTextColor">#323F4B</color>
     <color name="inputTextColor">#616E7C</color>
     <color name="hintTextColor">#9AA5B1</color>
     <color name="primaryColor">#BF1E2E</color>
+    <color name="primaryLightColor">#F9E9EA</color>
     <color name="lineColor">#CBD2D9</color>
+    <color name="primaryText">#333333</color>
+    <color name="dividerColor">#E4E7EB</color>
 </resources>
